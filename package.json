@@ -1,5 +1,5 @@
 {
-  "name": "my-ic-app",
+  "name": "Dfinity-React-Typescript-tailwind2",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite --host",
@@ -20,6 +20,7 @@
     "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
+    "@types/node": "^16.10.2",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "@vitejs/plugin-react-refresh": "^1.3.6",
