@@ -1,13 +1,28 @@
 import React from "react"
-import { Auth } from "./Auth"
 import { Intro } from "./Intro"
+import { About } from "./About"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Auth />
-      <Intro />
-    </div>
+    <Router>
+      <div className="App">
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/">
+            <Intro />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   )
 }
 
